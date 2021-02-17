@@ -128,7 +128,7 @@ export default function Home() {
               )
             : loading && <Loader />}
           {products.length && (
-            <div className="container-fluid-pagination">
+            <div className={styles.containerFluidPagination}>
               <Pagination
                 productsPerPage={4}
                 totalProducts={products.length}

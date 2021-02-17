@@ -97,7 +97,7 @@ const Navbar = () => {
                     return (
                       <React.Fragment key={product.id}>
                         <p
-                          className={styles.product-actions}
+                          className={styles.productActions}
                           onClick={() => decreaseProductQty(product)}
                         >
                           <RemoveIcon
@@ -106,13 +106,13 @@ const Navbar = () => {
                           ></RemoveIcon>
                         </p>
                         <img
-                          className={styles.cart-image}
+                          className={styles.cartImage}
                           src={product.image}
                           alt={product.title}
                         />
                         with Qty: {product.qty}
                         <p
-                          className={`product-actions`}
+                          className={styles.productActions}
                           onClick={() => increaseProductQty(product)}
                         >
                           <Icon style={{ fontSize: 20 }} color="primary">
@@ -120,7 +120,7 @@ const Navbar = () => {
                           </Icon>
                         </p>
                         <p
-                          className="product-actions"
+                          className={styles.productActions}
                           onClick={() => deleteProductFromCart(product)}
                         >
                           <DeleteForeverIcon

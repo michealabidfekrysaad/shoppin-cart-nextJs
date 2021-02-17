@@ -133,7 +133,7 @@
   text-decoration: underline;
   color: white;
 }
-.product-actions {
+.productActions {
   display: inline-block;
   border: 1px solid red;
   cursor: pointer;
@@ -155,13 +155,13 @@
   width: 300px;
 }
 
-.cart-image {
+.cartImage {
   width: 50px;
   height: 50px;
   display: inline-block;
   
 }
-.my-page-link {
+.myPageLink {
   position: relative;
   display: block;
   padding: 0.5rem 0.75rem;
@@ -177,13 +177,13 @@
   background-color: red;
 }
 
-.container-fluid-pagination {
+.containerFluidPagination {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
-.my-pagination {
+.myPagination {
   display: flex;
   padding-left: 0;
   list-style: none;
@@ -256,4 +256,28 @@
   text-overflow: ellipsis;
   overflow: hidden;
   min-height: 140px; 
+}
+
+.prodCell {
+  width: 15%;
+  height: 50%;
+}
+.prodImage {
+  width: 100%;
+}
+.prodTitle {
+  max-width: 190px;
+}
+.prodTotal {
+  min-width: 60px;
+}
+.submitDiv {
+  text-align: center;
+  padding-top: 10px;
+}
+.table {
+  min-width: 650px;
+}
+.align{
+  text-align: left;
 }

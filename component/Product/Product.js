@@ -20,7 +20,7 @@ const Product = ({ cardInfo }) => {
   // const classes = useStyles();
 
   return (
-    <Card className="card">
+    <Card >
       <CardActionArea>
         <CardMedia
           className={styles.media}
@@ -29,7 +29,6 @@ const Product = ({ cardInfo }) => {
         />
         <CardContent>
           <Typography
-
             className={styles.truncate}
           >
             {cardInfo.title}

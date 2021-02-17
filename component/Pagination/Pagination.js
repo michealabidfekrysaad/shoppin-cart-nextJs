@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+import styles from "../../styles/Home.module.css";
 
 const Pagination = ({ productsPerPage, totalProducts, paginate }) => {
   const pageNumbers = [];
@@ -8,16 +9,17 @@ const Pagination = ({ productsPerPage, totalProducts, paginate }) => {
   }
   return (
     <main>
-      <ul className="my-pagination">
+      <ul className={styles.myPagination}>
         {pageNumbers.map((number) => {
           return (
             <li key={number}>
-              <Link
-                to=""
-                onClick={() => paginate(number)}
-                className="my-page-link"
-              >
-                {number}
+              <Link href="/">
+                <a
+                  onClick={() => paginate(number)}
+                  className={styles.myPageLink}
+                >
+                  {number}
+                </a>
               </Link>
             </li>
           );
