@@ -1,0 +1,53 @@
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.row {
+  padding-top: 15px;
+}
+.col25 {
+  float: left;
+  width: 25%;
+  margin-top: 10px;
+}
+
+.col75 {
+  float: left;
+  width: 75%;
+  margin-top: 10px;
+}
+
+/* input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  } */
+.errMessage {
+  position: absolute;
+  color: red;
+  font-weight: 500;
+  font-family: monospace, sans-serif;
+}
+.disabledBtn {
+  background-color: grey;
+  pointer-events: none;
+  color: black;
+  float: right;
+  border-radius: 4px;
+  padding: 12px 20px;
+
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.buttonAppear {
+    background-color: blue!important;
+    float: right;
+  }
+
