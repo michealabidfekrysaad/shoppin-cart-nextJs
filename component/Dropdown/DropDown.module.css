@@ -1,0 +1,23 @@
+.root {
+    position: relative;
+  }
+.Btn {
+    cursor: pointer;
+    background-color: inherit;
+    padding: 4px;
+    margin: 2px;
+    border: none;
+  }
+  .dropdownItem {
+    position: absolute;
+    top: 42px;
+    left: -259px;
+    right: 0px;
+    border: 1px solid;
+    padding: 8px;
+    z-index: 1;
+    background-color: #fff;
+    color: black;
+    width: 300px;
+  }
+  

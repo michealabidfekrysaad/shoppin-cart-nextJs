@@ -15,7 +15,7 @@ import {
   IncreaseQuantityCart,
   deleteProductCart,
 } from "../utils/shared";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Cart.module.css";
 import Head from "next/head";
 
 const Cart = () => {

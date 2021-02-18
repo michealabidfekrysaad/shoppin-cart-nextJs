@@ -7,13 +7,12 @@ const NotFound = () => {
   useEffect(() => {
     console.log("useEffect run");
     setTimeout(()=>{
-        // router.go(1)
         router.push('/')
     },3000)
     
   }, []);
   return (
-    <div className="not-found">
+    <div>
       <h1>Ooooops ....</h1>
       <h2>This page not found</h2>
       <p>

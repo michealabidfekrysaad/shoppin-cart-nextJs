@@ -7,14 +7,9 @@ import "../styles/Home.module.css"
 
 function MyApp({ Component, pageProps }) {
   return (
-    // <Provider store={store}>
-      // <Router>
         <Layout>
           <Component {...pageProps} />
         </Layout>
-      //  </Router>
-    // </Provider>
-    // <h1>index</h1>
   );
 }
 

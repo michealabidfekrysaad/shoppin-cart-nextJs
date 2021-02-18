@@ -54,13 +54,12 @@ const Details = ({ prod }) => {
       <Head>
         <title>Details</title>
       </Head>
-      <div className="container-fluid">
-        <div className="product-details">
+        <main>
           {!product.length ? (
             <Card className={styles.rootForProdDetails}>
               <CardHeader
                 avatar={
-                  <Avatar aria-label="recipe" className={styles.avatar}>
+                  <Avatar aria-label="recipe" >
                     R
                   </Avatar>
                 }
@@ -86,8 +85,7 @@ const Details = ({ prod }) => {
           ) : (
             loading && <Loader />
           )}
-        </div>
-      </div>
+        </main>
     </>
   );
 };

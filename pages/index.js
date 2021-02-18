@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Index.module.css'
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux"; 
 import { ProductsRequest } from "../store/actions/Products";

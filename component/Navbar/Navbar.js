@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import styles from "../../styles/Home.module.css";
+import styles from "./Navbar.module.css";
 
 import Link from "next/link";
 import { Home, ShoppingCart } from "@material-ui/icons";
@@ -18,39 +18,6 @@ import Icon from "@material-ui/core/Icon";
 import RemoveIcon from "@material-ui/icons/Remove";
 import DeleteForeverIcon from "@material-ui/icons/DeleteForever";
 import Dropdown from "../Dropdown/Dropddown";
-
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     position: "relative",
-//   },
-//   dropdown: {
-//     position: "absolute",
-//     top: 33,
-//     left: -389,
-//     right: 0,
-//     border: "1px solid",
-//     padding: 8,
-//     zIndex: 1,
-//     backgroundColor: "#fff",
-//     color: "black",
-//     width: 400,
-//   },
-//   grow: {
-//     flexGrow: 1,
-//   },
-//   title: {
-//     display: "none",
-//     [theme.breakpoints.down("xl")]: {
-//       display: "block",
-//     },
-//   },
-//   sectionDesktop: {
-//     display: "flex",
-//     [theme.breakpoints.down("xl")]: {
-//       display: "flex",
-//     },
-//   },
-// }));
 
 const Navbar = () => {
   const CartReducer = useSelector((state) => state.CartReducer);
@@ -68,8 +35,6 @@ const Navbar = () => {
   const deleteProductFromCart = (product) => {
     deleteProductCart(product);
   };
-
-  // const classes = useStyles();
 
   return (
     <div className={styles.grow}>
@@ -141,13 +106,9 @@ const Navbar = () => {
               screenAppear={<AccountCircleIcon fontSize="large" />}
               DropdownBody={
                 <>
-                  <Link className={styles.dropdownItem} href="">
-                    View / Edit Profile
-                  </Link>
+                  <Link href="">View / Edit Profile</Link>
                   <br />
-                  <Link className={styles.dropdownItem} href="">
-                    Sign out
-                  </Link>
+                  <Link href="">Sign out</Link>
                 </>
               }
             />
