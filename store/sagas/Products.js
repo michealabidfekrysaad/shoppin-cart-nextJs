@@ -13,7 +13,6 @@ export function* getProductsRequest() {
   }
 }
 
-//for product details
 export function* getProductsDetailsRequest(payload) {
   try {
     const response = yield call(API.getProductDetails,payload.payload);

@@ -23,7 +23,6 @@ const Cart = () => {
 
   const CartReducer = useSelector((state) => state.CartReducer);
 
-  // const classes = useStyles();
   const increaseProduct = (product) => {
     IncreaseQuantityCart(product);
   };

@@ -1,10 +1,8 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import styles from "./Navbar.module.css";
-
 import Link from "next/link";
 import { Home, ShoppingCart } from "@material-ui/icons";
 import { useSelector } from "react-redux";

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useEffect } from "react";
-import { useRouter, Router } from "next/router";
+import { useRouter } from "next/router";
 
 const NotFound = () => {
     const router = useRouter();
@@ -9,7 +9,6 @@ const NotFound = () => {
     setTimeout(()=>{
         router.push('/')
     },3000)
-    
   }, []);
   return (
     <div>

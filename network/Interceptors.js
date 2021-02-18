@@ -26,7 +26,6 @@ export const errorHandler = (error) => {
   if (isHandlerEnabled(error.config)) {
     error.config.headers["failed"] = "network-error"
     store.dispatch(loader(false));
-
   }
   return Promise.reject({ ...error });
 };
