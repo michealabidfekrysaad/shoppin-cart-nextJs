@@ -87,7 +87,7 @@ export default function Home() {
   };
   return (
     <div className={styles.root}>
-      <Grid container spacing={1}>
+      <Grid >
         <Grid container item xs={12} spacing={3}>
           {currentProducts.length
             ? currentProducts.map(

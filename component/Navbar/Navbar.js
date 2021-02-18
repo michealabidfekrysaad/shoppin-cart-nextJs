@@ -116,7 +116,7 @@ const Navbar = () => {
                           onClick={() => increaseProductQty(product)}
                         >
                           <Icon style={{ fontSize: 20 }} color="primary">
-                            add_circle
+                            +{" "}
                           </Icon>
                         </p>
                         <p
