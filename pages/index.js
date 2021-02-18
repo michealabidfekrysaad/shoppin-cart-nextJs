@@ -111,6 +111,7 @@ export default function Home() {
                           variant="outlined"
                           color="secondary"
                           content="Details"
+                          className={styles.buttonAddTocart}
                           handleClick={() =>
                             goToProductDetails({
                               id,

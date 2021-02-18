@@ -6,7 +6,7 @@ import styles from '../../styles/Home.module.css'
 
 const Loader = () => {
   return (
-    <div className={styles.containerFluidPagination}>
+    <div className={styles.loader}>
            <Image src="/loader.svg" width={128} height={77} />
     </div>
   );

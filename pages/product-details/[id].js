@@ -9,7 +9,6 @@ import { ProductsDetailsRequest } from "../../store/actions/Products";
 import { useSelector, useDispatch } from "react-redux";
 import Loader from "../../component/Loader/Loader";
 import styles from "../../styles/Home.module.css";
-import { ProductsRequest } from "../../store/actions/Products";
 
 export const getStaticPaths = async () => {
   const response = await fetch("https://fakestoreapi.com/products");

@@ -1,5 +1,4 @@
 import React from "react";
-import "./Input.scss";
 
 const Input = ({ type, id, name, onBlur, onChange, value }) => {
   return (

@@ -9,7 +9,9 @@ const Layout = ({ children }) => {
       <Provider store={store}>
         {/* <StaticRouter> */}
           <Navbar />
+          <section>
           {children}
+          </section>
         {/* </StaticRouter> */}
       </Provider>
     </div>
