@@ -1,4 +1,4 @@
-// import Head from 'next/head'
+import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux"; 
@@ -16,25 +16,6 @@ import Loader from "../component/Loader/Loader";
 import { useRouter, Router } from "next/router";
 
 
-
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     flexGrow: 1,
-//     paddingTop: 20,
-//   },
-//   paper: {
-//     padding: theme.spacing(1),
-//     textAlign: "center",
-//     color: theme.palette.text.secondary,
-//   },
-//   rootCard: {
-//     maxWidth: 345,
-//   },
-//   media: {
-//     height: 140,
-//   },
-// }));
-
 export default function Home() {
   const products = useSelector((state) => state.ProductsReducer);
   const loading = useSelector((state) => state.loader);
@@ -48,8 +29,6 @@ export default function Home() {
     setCurrentPage(pageNumber);
   };
 
-  // const classes = useStyles();
-  // const history = useHistory();
   const router = useRouter();
 
 
@@ -68,12 +47,10 @@ export default function Home() {
     if (existed_item) {
       existed_item.qty += 1;
       existed_item.total += existed_item.price;
-      // AddToCart("");
       dispatch(AddToCart(""));
     } else {
       product.qty = 1;
       product.total = product.price;
-      // AddToCart(product);
       dispatch(AddToCart(product));
     }
       router.push("/cart");
@@ -86,6 +63,10 @@ export default function Home() {
     });
   };
   return (
+    <>
+    <Head>
+    <title>Home</title>
+    </Head>
     <div className={styles.root}>
       <Grid >
         <Grid container item xs={12} spacing={3}>
@@ -140,5 +121,6 @@ export default function Home() {
         </Grid>
       </Grid>
     </div>
+    </>
   )
 }
