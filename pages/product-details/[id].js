@@ -15,9 +15,9 @@ export const getStaticPaths = async () => {
   const response = await fetch("https://fakestoreapi.com/products");
   const data = await response.json();
 
-  const paths = data.map((ninja) => {
+  const paths = data.map((prod) => {
     return {
-      params: { id: ninja.id.toString() },
+      params: { id: prod.id.toString() },
     };
   });
   return {
@@ -34,19 +34,18 @@ export const getStaticProps = async (context) => {
     `https://fakestoreapi.com/products/${id}`
   );
   const data = await response.json();
-  console.log(data);
   
   return {
-    props: { ninja: data },
+    props: { prod: data },
   };
 };
 
-const Details = ({ ninja }) => {
+const Details = ({ prod }) => {
 
   const product = useSelector((state) => state.ProductsReducer);
   const loading = useSelector((state) => state.loader);
   const dispatch = useDispatch();
-  const id = ninja.id;
+  const id = prod.id;
 
   useEffect(() => {
     dispatch(ProductsDetailsRequest(id));
